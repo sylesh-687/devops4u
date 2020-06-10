@@ -1,0 +1,4 @@
+export SERVER_NAME="osgroup-techies.com"
+export NGINX_HOST="osgroup-techies.com"
+export PORT="80"
+

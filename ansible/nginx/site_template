@@ -1,0 +1,16 @@
+# {{ ansible_managed }}
+server {
+        listen 80;
+        server_name ${SERVER_NAME};
+
+        access_log /var/log/nginx/reverse-access.log;
+        error_log /var/log/nginx/reverse-error.log;
+
+        location / {
+                    proxy_pass http://${NGINX_HOST}:${PORT} ;
+        }        
+}
+
+
+
+

@@ -3,7 +3,7 @@ module "lxd-iaac"{
   cpu=1
   mem="256MB"
   con_name="docker4u"
-  img_name="dockerbaseimage"
+  img_name="docker-baseimage"
   
 
 }
