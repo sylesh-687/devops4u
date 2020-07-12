@@ -4,6 +4,7 @@ module "Docker-IaaC-CIDemo" {
   image_name     ="osgroupgeeks/cidemo:master_4"
   port           ="8000"
   memory         ="512"
+  mountpath      ="/opt"
 }
 
 
