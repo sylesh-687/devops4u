@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fibo1
+  
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fibo1
+  template:
+    metadata:
+      name: fibo1
+      labels:
+        app: fibo1
+    spec:
+      containers:
+      - name: fibo1
+        image: sumitsaiwal/fibonacci_flask
+
